@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sudoku Game</h1>
+
+    <div id="popup-message" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <p id="popup-text">This is a message.</p>
+        </div>
+    </div>
+    
+
+    <div id="difficulty-selection">
+        <h3>Select Difficulty:</h3>
+        <div id="difficulties">
+            <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+    </div>
+
+    <div id="board"></div>
+
+    <div id="number-selection">
+        <h3>Select a Number:</h3>
+        <div id="numbers">
+            <button class="number-btn" data-value="1">1</button>
+            <button class="number-btn" data-value="2">2</button>
+            <button class="number-btn" data-value="3">3</button>
+            <button class="number-btn" data-value="4">4</button>
+            <button class="number-btn" data-value="5">5</button>
+            <button class="number-btn" data-value="6">6</button>
+            <button class="number-btn" data-value="7">7</button>
+            <button class="number-btn" data-value="8">8</button>
+            <button class="number-btn" data-value="9">9</button>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="newGame">New Game</button>
+        <button id="reset">Reset</button>
+        <button id="hint">Hint</button>
+        <button id="checkErrors">Check Errors</button>
+    </div>
+
+    <div class="submit-section">
+        <button id="submit">Submit</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

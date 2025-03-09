@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ message }}</h1>
+    <div class="buttons">
+        <button onclick="window.location.href='{{ url_for('index') }}'">Play Again</button>
+        <button onclick="window.location.href='{{ url_for('leaderboard') }}'">View Leaderboard</button>
+    </div>
+</body>
+</html>
