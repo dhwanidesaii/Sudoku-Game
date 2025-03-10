@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
     
     function submitGame() {
         if (isBoardComplete() && isBoardValid()) {
-            showPopup("Congratulations! You won the game!");
+            showPopup("Hehehe You Won, Congratulations!");
         } else if (errorCount >= 20) {
-            showPopup("You lost the game. Try again!");
+            showPopup("Oopsie Daisy! You lost the game! Try again!");
         } else {
             showPopup("The Sudoku is not complete or valid yet! Keep trying!");
         }
@@ -153,4 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Start the game
     fetchNewGame();
+
 });
+
